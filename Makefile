@@ -3,6 +3,7 @@ all:	sum.o main.o
 
 main.o:	main.c
 	gcc -O0 -g main.c -c -o main.o
+	gcc -O0 -g -S -mregnames -S -o main.S
 
 sum.o:  sum.S
 	gcc -O0 -g sum.S -c -o sum.o
