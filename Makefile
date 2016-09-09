@@ -9,4 +9,12 @@ sum.o:  sum.S
 	gcc -O0 -g sum.S -c -o sum.o
 
 clean:
-	rm -fr sum.o main.o main
+	rm -fr *.o
+	file * | fgrep ELF | gawk 'match($$0, /(.*):/, cap) {print cap[1]}' | xargs rm -fr 
+
+
+%.o:	%.c
+	gcc -O0 -g -mvsx $< -o $@
+
+vlsdoi:	vlsdio.o
+	gcc -O0 -g $< -o $@
