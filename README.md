@@ -25,8 +25,9 @@ Example 1: [vsldoi.c] (vsldoi.c)
 
 This is an example of two things: 1) how `vsldoi` works and 2) how a 128-bit
 vector can be populated out of two different 64-bit general purpose registers
-using a VSX merge operation. The merge operation, although a Vector-Scalar, can
-operate over Vector registers since VSX and VMX registers overlap.
+using the VSX merge operation `xxmrghd`. The merge operation, although a
+Vector-Scalar, can operate over Vector registers since VSX and VMX registers
+overlap.
 
 How `vsldoi` works is clear after inspecting the shift operations over a vector:
 
