@@ -21,7 +21,7 @@ End of assembler dump.
 (gdb)
 ```
 
-Example 1: [vsldoi.c] (vsldoi.c)
+##### Example 1: [vsldoi.c] (vsldoi.c)
 
 This is an example of two things: 1) how `vsldoi` works and 2) how a 128-bit
 vector can be populated out of two different 64-bit general purpose registers
