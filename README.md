@@ -43,3 +43,11 @@ vsldoi  v2,v0,v1,4:
 v0 || v1 = 0x5555555555555555ffffffffffffffff00000000000000000000000000000000
 v2       =         0x55555555ffffffffffffffff00000000
 ```
+
+##### Example 2: [pvr.c] (pvr.c)
+
+This tiny instruction shows from which register the machine information comes
+from, being it that listed in the LD_SHOW_AUXV=1, lscpu, or that used by the
+kernel to know that CPU initialization vectors it will use. In the end, all
+comes from the speciall purporse register called PVR (Processor Version
+Register).

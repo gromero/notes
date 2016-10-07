@@ -18,3 +18,6 @@ clean:
 
 vlsdoi:	vlsdio.o
 	gcc -O0 -g $< -o $@
+
+pvr:	pvr.c
+	gcc -O0 -g $< -o $@
