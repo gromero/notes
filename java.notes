@@ -1,0 +1,1 @@
+- Variable defined in outer scope cannot be defined again in the inner scope, contrary to what happens in C/C++
